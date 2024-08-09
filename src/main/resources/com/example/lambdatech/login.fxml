@@ -14,7 +14,7 @@
    <children>
       <ImageView fx:id="back_ss" fitHeight="810.0" fitWidth="1678.0" layoutX="1.0" onMouseClicked="#login_click" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@login.png" />
+            <Image url="@img/login.png" />
          </image>
       </ImageView>
       <CheckBox fx:id="showCheck" layoutX="335.0" layoutY="530.0" mnemonicParsing="false" onMouseClicked="#changeVisibility" prefHeight="32.0" prefWidth="35.0" />
@@ -44,5 +44,7 @@
             <Font name="System Bold" size="22.0" />
          </font>
       </Text>
+      <Button layoutX="503.0" layoutY="735.0" mnemonicParsing="false" onAction="#signup_page_change" prefHeight="29.0" prefWidth="82.0" style="-fx-background-color: rgba(255, 255, 255, 0); -fx-border-color: rgba(0, 0, 0, 0);" />
+      <Button layoutX="127.0" layoutY="68.0" mnemonicParsing="false" onAction="#delete_it" prefHeight="131.0" prefWidth="221.0" text="Button" />
    </children>
 </AnchorPane>
