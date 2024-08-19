@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="810.0" prefWidth="1603.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.lambdatech.DeveloperSignupController">
+   <children>
+      <ImageView fitHeight="810.0" fitWidth="1678.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/admin-signup.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="username" layoutX="323.0" layoutY="119.0" prefHeight="54.0" prefWidth="419.0" style="-fx-background-color: rgba(255, 255, 255, 0); -fx-border-color: rgba(255, 255, 255, 0);">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="password_show" layoutX="323.0" layoutY="227.0" prefHeight="54.0" prefWidth="419.0" style="-fx-background-color: rgba(255, 255, 255, 0); -fx-border-color: rgba(255, 255, 255, 0);">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="email" layoutX="323.0" layoutY="336.0" prefHeight="54.0" prefWidth="419.0" style="-fx-background-color: rgba(255, 255, 255, 0); -fx-border-color: rgba(255, 255, 255, 0);">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="phone" layoutX="323.0" layoutY="442.0" prefHeight="54.0" prefWidth="419.0" style="-fx-background-color: rgba(255, 255, 255, 0); -fx-border-color: rgba(255, 255, 255, 0);">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="designation" layoutX="323.0" layoutY="547.0" prefHeight="54.0" prefWidth="419.0" style="-fx-background-color: rgba(255, 255, 255, 0); -fx-border-color: rgba(255, 255, 255, 0);">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </TextField>
+      <PasswordField fx:id="password_hide" layoutX="323.0" layoutY="230.0" prefHeight="52.0" prefWidth="419.0" style="-fx-background-color: rgba(255, 255, 255, 0); -fx-border-color: rgba(255, 255, 255, 0);" visible="false">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </PasswordField>
+      <TextArea fx:id="about" layoutX="1146.0" layoutY="552.0" prefHeight="129.0" prefWidth="408.0" style="-fx-background-color: rgba(255, 255, 255, 0); -fx-border-image-insets: rgba(255, 255, 255, 0);">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </TextArea>
+      <Button layoutX="716.0" layoutY="693.0" mnemonicParsing="false" onAction="#signup_admin" prefHeight="69.0" prefWidth="192.0" style="-fx-background-color: rgba(255, 255, 255, 0); -fx-border-color: rgba(255, 255, 255, 0);" />
+      <CheckBox fx:id="showCheck" layoutX="323.0" layoutY="297.0" mnemonicParsing="false" onMouseClicked="#changeVisibility" prefHeight="27.0" prefWidth="166.0" text="Show password" textFill="#f5f3f3">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </CheckBox>
+      <ImageView fitHeight="58.0" fitWidth="56.0" layoutX="30.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/back_btn.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="37.0" layoutY="75.0" mnemonicParsing="false" onAction="#dev_loign_page" prefHeight="38.0" prefWidth="45.0" style="-fx-background-color: rgba(255, 255, 255, 0); -fx-border-color: rgba(255, 255, 255, 0);" />
+      <ImageView fitHeight="144.0" fitWidth="275.0" layoutX="887.0" layoutY="160.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/input.png" />
+         </image>
+      </ImageView>
+      <Text fill="#f8f5f5" layoutX="838.0" layoutY="189.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1st" wrappingWidth="35.4140625">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="144.0" fitWidth="275.0" layoutX="887.0" layoutY="226.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/input.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="144.0" fitWidth="275.0" layoutX="887.0" layoutY="297.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/input.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="144.0" fitWidth="275.0" layoutX="887.0" layoutY="366.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/input.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="144.0" fitWidth="275.0" layoutX="887.0" layoutY="441.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/input.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="d1" layoutX="897.0" layoutY="154.0" prefHeight="56.0" prefWidth="254.0" style="-fx-background-color: rgba(255, 255, 255, 0); -fx-border-color: rgba(255, 255, 255, 0);">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="d2" layoutX="897.0" layoutY="222.0" prefHeight="56.0" prefWidth="254.0" style="-fx-background-color: rgba(255, 255, 255, 0); -fx-border-color: rgba(255, 255, 255, 0);">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="d3" layoutX="898.0" layoutY="293.0" prefHeight="56.0" prefWidth="254.0" style="-fx-background-color: rgba(255, 255, 255, 0); -fx-border-color: rgba(255, 255, 255, 0);">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="d4" layoutX="898.0" layoutY="362.0" prefHeight="56.0" prefWidth="254.0" style="-fx-background-color: rgba(255, 255, 255, 0); -fx-border-color: rgba(255, 255, 255, 0);">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="d5" layoutX="898.0" layoutY="437.0" prefHeight="56.0" prefWidth="254.0" style="-fx-background-color: rgba(255, 255, 255, 0); -fx-border-color: rgba(255, 255, 255, 0);">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <ImageView fitHeight="144.0" fitWidth="275.0" layoutX="1253.0" layoutY="228.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/input.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="144.0" fitWidth="275.0" layoutX="1253.0" layoutY="299.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/input.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="144.0" fitWidth="275.0" layoutX="1253.0" layoutY="368.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/input.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="144.0" fitWidth="275.0" layoutX="1253.0" layoutY="443.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/input.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="l2" layoutX="1263.0" layoutY="224.0" prefHeight="56.0" prefWidth="254.0" style="-fx-background-color: rgba(255, 255, 255, 0); -fx-border-color: rgba(255, 255, 255, 0);">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="l3" layoutX="1264.0" layoutY="295.0" prefHeight="56.0" prefWidth="254.0" style="-fx-background-color: rgba(255, 255, 255, 0); -fx-border-color: rgba(255, 255, 255, 0);">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="l4" layoutX="1264.0" layoutY="364.0" prefHeight="56.0" prefWidth="254.0" style="-fx-background-color: rgba(255, 255, 255, 0); -fx-border-color: rgba(255, 255, 255, 0);">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="l5" layoutX="1264.0" layoutY="439.0" prefHeight="56.0" prefWidth="254.0" style="-fx-background-color: rgba(255, 255, 255, 0); -fx-border-color: rgba(255, 255, 255, 0);">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <ImageView fitHeight="144.0" fitWidth="275.0" layoutX="1254.0" layoutY="160.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/input.png" />
+         </image>
+      </ImageView>
+      <Text fill="#f8f5f5" layoutX="838.0" layoutY="250.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2nd">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Text fill="#f8f5f5" layoutX="838.0" layoutY="323.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3rd">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Text fill="#f8f5f5" layoutX="840.0" layoutY="392.0" strokeType="OUTSIDE" strokeWidth="0.0" text="4th">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Text fill="#f8f5f5" layoutX="841.0" layoutY="467.0" strokeType="OUTSIDE" strokeWidth="0.0" text="5th">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Text fill="#f8f5f5" layoutX="1205.0" layoutY="194.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1st" wrappingWidth="35.4140625">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Text fill="#f8f5f5" layoutX="1205.0" layoutY="255.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2nd">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Text fill="#f8f5f5" layoutX="1205.0" layoutY="328.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3rd">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Text fill="#f8f5f5" layoutX="1207.0" layoutY="397.0" strokeType="OUTSIDE" strokeWidth="0.0" text="4th">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Text fill="#f8f5f5" layoutX="1208.0" layoutY="472.0" strokeType="OUTSIDE" strokeWidth="0.0" text="5th">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Text fill="#f5eeee" layoutX="936.0" layoutY="129.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Domain">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+      </Text>
+      <Text fill="#f5eeee" layoutX="1302.0" layoutY="129.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Language">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+      </Text>
+      <TextField fx:id="l1" layoutX="1263.0" layoutY="154.0" prefHeight="56.0" prefWidth="254.0" style="-fx-background-color: rgba(255, 255, 255, 0); -fx-border-color: rgba(255, 255, 255, 0);">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <Text fx:id="username_black" fill="#eb0808" layoutX="323.0" layoutY="207.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="408.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text fx:id="password_black" fill="#eb0808" layoutX="497.0" layoutY="317.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="245.13671875">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text fx:id="email_black" fill="#eb0808" layoutX="323.0" layoutY="423.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="419.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text fx:id="phone_black" fill="#eb0808" layoutX="323.0" layoutY="529.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="419.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text fx:id="des_black" fill="#eb0808" layoutX="323.0" layoutY="648.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="419.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text fx:id="about_black" fill="#eb0808" layoutX="1141.0" layoutY="722.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="419.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

@@ -7,6 +7,4 @@ module com.example.lambdatech {
 
     opens com.example.lambdatech to javafx.fxml;
     exports com.example.lambdatech;
-    exports com.example.lambdatech.Controller;
-    opens com.example.lambdatech.Controller to javafx.fxml;
 }

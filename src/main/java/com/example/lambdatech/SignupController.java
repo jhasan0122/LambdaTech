@@ -1,4 +1,4 @@
-package com.example.lambdatech.Controller;
+package com.example.lambdatech;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -66,11 +66,11 @@ public class SignupController {
     @FXML
     void back_to_signup(ActionEvent event) throws IOException {
         Parent parent = FXMLLoader.load(getClass().getResource("login.fxml"));
-        Scene scene2 = new Scene(parent);
+        Scene scene1 = new Scene(parent);
 
         Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
 
-        window.setScene(scene2);
+        window.setScene(scene1);
         window.show();
     }
 

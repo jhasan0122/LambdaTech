@@ -1,12 +1,21 @@
-package com.example.lambdatech.Controller;
+package com.example.lambdatech;
 
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.TextField;
 import javafx.scene.image.ImageView;
+import javafx.stage.Stage;
+
+import java.io.IOException;
 
 public class DashboardController {
+
+    public static String searchQuery ="";
 
     // Board
     @FXML
@@ -44,12 +53,42 @@ public class DashboardController {
 
     @FXML
     void python_dev(ActionEvent event) {
-        System.out.println("Python");
+        try{
+
+            searchQuery = "python";
+
+            Parent parent = FXMLLoader.load(getClass().getResource("domain_work.fxml"));
+
+            Scene scene2 = new Scene(parent);
+
+            Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
+            window.setTitle("Dashboard");
+
+            window.setScene(scene2);
+            window.show();
+        }catch (IOException e){
+            System.out.println(e.getMessage());
+        }
     }
 
     @FXML
     void web_dev(ActionEvent event) {
-        System.out.println("Web");
+        try{
+
+            searchQuery = "web";
+
+            Parent parent = FXMLLoader.load(getClass().getResource("domain_work.fxml"));
+
+            Scene scene2 = new Scene(parent);
+
+            Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
+            window.setTitle("Dashboard");
+
+            window.setScene(scene2);
+            window.show();
+        }catch (IOException e){
+            System.out.println(e.getMessage());
+        }
     }
 
     @FXML
@@ -67,7 +106,7 @@ public class DashboardController {
     private TextField searchBar;
 
     @FXML
-    void search(ActionEvent event) {
+    void search(ActionEvent event) {   //in
         String searchValue = searchBar.getText();
         System.out.println(searchValue + "Searching...");
     }

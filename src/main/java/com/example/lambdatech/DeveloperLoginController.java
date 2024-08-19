@@ -1,11 +1,12 @@
 package com.example.lambdatech;
 
+
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.Node;
 import javafx.scene.control.CheckBox;
 import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
@@ -17,7 +18,10 @@ import javafx.stage.Stage;
 import java.io.IOException;
 import java.sql.*;
 
-public class MainController {
+public class DeveloperLoginController {
+
+    @FXML
+    private ImageView back_pic;
 
     @FXML
     private ImageView back_ss;
@@ -55,19 +59,6 @@ public class MainController {
     }
 
     @FXML
-    void delete_it(ActionEvent event) throws IOException {
-        Parent parent = FXMLLoader.load(getClass().getResource("dashboard.fxml"));
-
-        Scene scene2 = new Scene(parent);
-
-        Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
-        window.setTitle("Dashboard");
-
-        window.setScene(scene2);
-        window.show();
-    }
-
-    @FXML
     void login_click(MouseEvent event) {
         String username = username_login.getText();
         String password = passwordField.getText();
@@ -90,10 +81,10 @@ public class MainController {
         }
 
         if(flag){
-            String sql = "select password from client where client_name = '" + username + "'";
-             final String URL = "jdbc:mysql://localhost:3306/lambdatech";
-             final String USER = "root";
-             final String PASSWORD = "";
+            String sql = "select password from developer where dev_name = '" + username + "'";
+            final String URL = "jdbc:mysql://localhost:3306/lambdatech";
+            final String USER = "root";
+            final String PASSWORD = "";
 
 
             try {
@@ -113,7 +104,7 @@ public class MainController {
                 }
 
                 if(pass.equals(password) || pass.equals(pass2)){
-
+                    System.out.println("LOGIN CONFIRM");
                     Parent parent = FXMLLoader.load(getClass().getResource("dashboard.fxml"));
 
                     Scene scene2 = new Scene(parent);
@@ -140,8 +131,9 @@ public class MainController {
     }
 
     @FXML
-    void signup_page_change(ActionEvent event) throws IOException {
-        Parent parent = FXMLLoader.load(getClass().getResource("signup.fxml"));
+    void signup_page_change2(ActionEvent event) throws IOException{
+
+        Parent parent = FXMLLoader.load(getClass().getResource("developer_signup.fxml"));
 
         Scene scene2 = new Scene(parent);
 
@@ -153,15 +145,13 @@ public class MainController {
     }
 
     @FXML
-    void developer_mode(ActionEvent event) throws IOException {
-        Parent parent = FXMLLoader.load(getClass().getResource("developer_login.fxml"));
-
-        Scene scene3 = new Scene(parent);
+    void to_login(ActionEvent event) throws IOException{
+        Scene scene2 = new Scene(FXMLLoader.load(getClass().getResource("login.fxml")));
 
         Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
-        window.setTitle("developer");
+        window.setTitle("Sign Up");
 
-        window.setScene(scene3);
+        window.setScene(scene2);
         window.show();
     }
 
