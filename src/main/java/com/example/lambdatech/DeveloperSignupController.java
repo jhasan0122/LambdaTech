@@ -144,7 +144,7 @@ public class DeveloperSignupController {
         } else {
 
 
-            String sql = "SELECT COUNT(*) FROM developer WHERE dev_name = '"+usernameS+"'";
+            String sql = "SELECT sys FROM developer WHERE dev_name = '"+usernameS+"'";
             final String URL = "jdbc:mysql://localhost:3306/lambdatech";
             final String USER = "root";
             final String PASSWORD = "";

@@ -1,18 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.text.Font?>
-<?import javafx.scene.text.Text?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
 
-
-<AnchorPane prefHeight="810.0" prefWidth="1678.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.lambdatech.DomainWorkController">
+<AnchorPane prefHeight="813.0" prefWidth="1623.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.lambdatech.DomainWorkController">
    <children>
-      <Text fx:id="write_here" layoutX="306.0" layoutY="291.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="100.98307228088379">
-         <font>
-            <Font size="64.0" />
-         </font>
-      </Text>
-      <Button layoutX="439.0" layoutY="278.0" mnemonicParsing="false" onAction="#findText" prefHeight="80.0" prefWidth="101.0" text="Button" />
+      <ImageView fitHeight="810.0" fitWidth="1678.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/temp.png" />
+         </image>
+      </ImageView>
+      <GridPane fx:id="gridList" layoutX="325.0" layoutY="115.0" prefHeight="686.0" prefWidth="993.0">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+      </GridPane>
+      <ImageView fx:id="back_btn" fitHeight="44.0" fitWidth="50.0" layoutX="21.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true" style="-fx-background-radius: 10px;">
+         <image>
+            <Image url="@img/back_btn.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="21.0" layoutY="35.0" mnemonicParsing="false" onAction="#dashboard_go" prefHeight="44.0" prefWidth="44.0" style="-fx-background-color: rgba(255, 255, 255, 0); -fx-border-color: rgba(255, 255, 255, 0);" />
    </children>
 </AnchorPane>

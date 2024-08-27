@@ -23,32 +23,122 @@ public class DashboardController {
 
     @FXML
     void android_dev(ActionEvent event) {
-        System.out.println("Android");
+        try{
+
+            searchQuery = "apps";
+
+            Parent parent = FXMLLoader.load(getClass().getResource("domain_work.fxml"));
+
+            Scene scene2 = new Scene(parent);
+
+            Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
+            window.setTitle("Dashboard");
+
+            window.setScene(scene2);
+            window.show();
+        }catch (IOException e){
+            System.out.println(e.getMessage());
+        }
     }
 
     @FXML
     void dbms_dev(ActionEvent event) {
-        System.out.println("DBMS");
+        try{
+
+            searchQuery = "dbms";
+
+            Parent parent = FXMLLoader.load(getClass().getResource("domain_work.fxml"));
+
+            Scene scene2 = new Scene(parent);
+
+            Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
+            window.setTitle("Dashboard");
+
+            window.setScene(scene2);
+            window.show();
+        }catch (IOException e){
+            System.out.println(e.getMessage());
+        }
     }
 
     @FXML
     void deep_dev(ActionEvent event) {
-        System.out.println("Deep");
+        try{
+
+            searchQuery = "deep";
+
+            Parent parent = FXMLLoader.load(getClass().getResource("domain_work.fxml"));
+
+            Scene scene2 = new Scene(parent);
+
+            Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
+            window.setTitle("Dashboard");
+
+            window.setScene(scene2);
+            window.show();
+        }catch (IOException e){
+            System.out.println(e.getMessage());
+        }
     }
 
     @FXML
     void html_dev(ActionEvent event) {
-        System.out.println("HTML");
+        try{
+
+            searchQuery = "html";
+
+            Parent parent = FXMLLoader.load(getClass().getResource("domain_work.fxml"));
+
+            Scene scene2 = new Scene(parent);
+
+            Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
+            window.setTitle("Dashboard");
+
+            window.setScene(scene2);
+            window.show();
+        }catch (IOException e){
+            System.out.println(e.getMessage());
+        }
     }
 
     @FXML
     void js_dev(ActionEvent event) {
-        System.out.println("JS");
+        try{
+
+            searchQuery = "js";
+
+            Parent parent = FXMLLoader.load(getClass().getResource("domain_work.fxml"));
+
+            Scene scene2 = new Scene(parent);
+
+            Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
+            window.setTitle("Dashboard");
+
+            window.setScene(scene2);
+            window.show();
+        }catch (IOException e){
+            System.out.println(e.getMessage());
+        }
     }
 
     @FXML
     void ml_dev(ActionEvent event) {
-        System.out.println("ML");
+        try{
+
+            searchQuery = "ml";
+
+            Parent parent = FXMLLoader.load(getClass().getResource("domain_work.fxml"));
+
+            Scene scene2 = new Scene(parent);
+
+            Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
+            window.setTitle("Dashboard");
+
+            window.setScene(scene2);
+            window.show();
+        }catch (IOException e){
+            System.out.println(e.getMessage());
+        }
     }
 
     @FXML
@@ -93,11 +183,41 @@ public class DashboardController {
 
     @FXML
     void ios_dev(ActionEvent event) {
-        System.out.println("IOS");
+        try{
+
+            searchQuery = "ios";
+
+            Parent parent = FXMLLoader.load(getClass().getResource("domain_work.fxml"));
+
+            Scene scene2 = new Scene(parent);
+
+            Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
+            window.setTitle("Dashboard");
+
+            window.setScene(scene2);
+            window.show();
+        }catch (IOException e){
+            System.out.println(e.getMessage());
+        }
     }
     @FXML
     void ai_dev(ActionEvent event) {
-        System.out.println("AI");
+        try{
+
+            searchQuery = "ai";
+
+            Parent parent = FXMLLoader.load(getClass().getResource("domain_work.fxml"));
+
+            Scene scene2 = new Scene(parent);
+
+            Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
+            window.setTitle("Dashboard");
+
+            window.setScene(scene2);
+            window.show();
+        }catch (IOException e){
+            System.out.println(e.getMessage());
+        }
     }
 
     //search

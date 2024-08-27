@@ -59,12 +59,12 @@
             <Font size="18.0" />
          </font>
       </CheckBox>
-      <ImageView fitHeight="58.0" fitWidth="56.0" layoutX="30.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="48.0" fitWidth="48.0" layoutX="30.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@img/back_btn.png" />
          </image>
       </ImageView>
-      <Button layoutX="37.0" layoutY="75.0" mnemonicParsing="false" onAction="#dev_loign_page" prefHeight="38.0" prefWidth="45.0" style="-fx-background-color: rgba(255, 255, 255, 0); -fx-border-color: rgba(255, 255, 255, 0);" />
+      <Button layoutX="30.0" layoutY="30.0" mnemonicParsing="false" onAction="#dev_loign_page" prefHeight="48.0" prefWidth="48.0" style="-fx-background-color: rgba(255, 255, 255, 0); -fx-border-color: rgba(255, 255, 255, 0);" />
       <ImageView fitHeight="144.0" fitWidth="275.0" layoutX="887.0" layoutY="160.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@img/input.png" />

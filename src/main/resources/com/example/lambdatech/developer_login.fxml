@@ -45,11 +45,11 @@
          </font>
       </Text>
       <Button layoutX="503.0" layoutY="735.0" mnemonicParsing="false" onAction="#signup_page_change2" prefHeight="29.0" prefWidth="82.0" style="-fx-background-color: rgba(255, 255, 255, 0); -fx-border-color: rgba(0, 0, 0, 0);" />
-      <Button layoutX="59.0" layoutY="48.0" mnemonicParsing="false" onAction="#to_login" prefHeight="32.0" prefWidth="35.0" text="Button" />
-      <ImageView fx:id="back_pic" fitHeight="48.0" fitWidth="60.0" layoutX="52.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="back_pic" fitHeight="48.0" fitWidth="60.0" layoutX="47.0" layoutY="39.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@img/back_btn.png" />
          </image>
       </ImageView>
+      <Button layoutX="47.0" layoutY="39.0" mnemonicParsing="false" onAction="#to_login" prefHeight="48.0" prefWidth="48.0" style="-fx-background-color: rgba(255, 255, 255, 0); -fx-border-color: rgba(255, 255, 255, 0);" />
    </children>
 </AnchorPane>
