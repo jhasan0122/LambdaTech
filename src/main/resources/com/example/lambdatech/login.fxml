@@ -10,9 +10,9 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="672.0" prefWidth="1331.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.lambdatech.MainController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="614.0" prefWidth="1216.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.lambdatech.MainController">
    <children>
-      <ImageView fx:id="back_ss" fitHeight="670.0" fitWidth="1399.0" onMouseClicked="#login_click" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="back_ss" fitHeight="611.0" fitWidth="1218.0" onMouseClicked="#login_click" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@img/login.png" />
          </image>
@@ -46,6 +46,6 @@
       </Text>
       <Button layoutX="415.0" layoutY="603.0" mnemonicParsing="false" onAction="#signup_page_change" prefHeight="29.0" prefWidth="82.0" style="-fx-background-color: rgba(255, 255, 255, 0); -fx-border-color: rgba(0, 0, 0, 0);" />
       <Button layoutX="127.0" layoutY="68.0" mnemonicParsing="false" onAction="#delete_it" prefHeight="131.0" prefWidth="221.0" text="Button" />
-      <Button layoutX="1180.0" layoutY="35.0" mnemonicParsing="false" onAction="#developer_mode" prefHeight="47.0" prefWidth="107.0" style="-fx-background-color: #013f93;" text="Developer" textFill="WHITE" />
+      <Button layoutX="962.0" layoutY="37.0" mnemonicParsing="false" onAction="#developer_mode" prefHeight="47.0" prefWidth="107.0" style="-fx-background-color: #013f93;" text="Developer" textFill="WHITE" />
    </children>
 </AnchorPane>
