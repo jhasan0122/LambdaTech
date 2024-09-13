@@ -10,41 +10,41 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="810.0" prefWidth="1624.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.lambdatech.MainController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="672.0" prefWidth="1331.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.lambdatech.MainController">
    <children>
-      <ImageView fx:id="back_ss" fitHeight="810.0" fitWidth="1678.0" layoutX="1.0" onMouseClicked="#login_click" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="back_ss" fitHeight="670.0" fitWidth="1399.0" onMouseClicked="#login_click" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@img/login.png" />
          </image>
       </ImageView>
-      <CheckBox fx:id="showCheck" layoutX="335.0" layoutY="530.0" mnemonicParsing="false" onMouseClicked="#changeVisibility" prefHeight="32.0" prefWidth="35.0" />
-      <Button layoutX="376.0" layoutY="609.0" mnemonicParsing="false" onMouseClicked="#login_click" prefHeight="77.0" prefWidth="167.0" style="-fx-background-color: rgba(255, 255, 255, 0);" />
-      <TextField fx:id="username_login" layoutX="370.0" layoutY="319.0" prefHeight="59.0" prefWidth="429.0" style="-fx-background-color: rgba(255, 255, 255, 0); -fx-border-color: rgba(0, 0, 0, 0);">
+      <CheckBox fx:id="showCheck" layoutX="277.0" layoutY="434.0" mnemonicParsing="false" onMouseClicked="#changeVisibility" prefHeight="32.0" prefWidth="35.0" />
+      <Button layoutX="307.0" layoutY="500.0" mnemonicParsing="false" onMouseClicked="#login_click" prefHeight="59.0" prefWidth="141.0" style="-fx-background-color: rgba(255, 255, 255, 0);" />
+      <TextField fx:id="username_login" layoutX="307.0" layoutY="260.0" prefHeight="40.0" prefWidth="347.0" style="-fx-background-color: rgba(255, 255, 255, 0); -fx-border-color: rgba(0, 0, 0, 0);">
          <font>
             <Font size="26.0" />
          </font>
       </TextField>
-      <PasswordField fx:id="passwordField" layoutX="370.0" layoutY="434.0" prefHeight="52.0" prefWidth="429.0" style="-fx-background-color: rgba(255, 255, 255, 0); -fx-border-color: rgba(0, 0, 0, 0);">
+      <PasswordField fx:id="passwordField" layoutX="307.0" layoutY="353.0" prefHeight="47.0" prefWidth="347.0" style="-fx-background-color: rgba(255, 255, 255, 0); -fx-border-color: rgba(0, 0, 0, 0);">
          <font>
             <Font size="26.0" />
          </font>
       </PasswordField>
-      <TextField fx:id="password_show" layoutX="370.0" layoutY="434.0" prefHeight="59.0" prefWidth="435.0" style="-fx-background-color: rgba(255, 255, 255, 0); -fx-border-color: rgba(0, 0, 0, 0);" visible="false">
+      <TextField fx:id="password_show" layoutX="307.0" layoutY="353.0" prefHeight="59.0" prefWidth="353.0" style="-fx-background-color: rgba(255, 255, 255, 0); -fx-border-color: rgba(0, 0, 0, 0);" visible="false">
          <font>
             <Font size="26.0" />
          </font>
       </TextField>
-      <Text fx:id="username_black" fill="RED" layoutX="375.0" layoutY="414.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="336.9830722808838">
+      <Text fx:id="username_black" fill="RED" layoutX="312.0" layoutY="344.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="336.9830722808838">
          <font>
             <Font name="System Bold" size="22.0" />
          </font>
       </Text>
-      <Text fx:id="password_black" fill="RED" layoutX="376.0" layoutY="524.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="336.9830722808838">
+      <Text fx:id="password_black" fill="RED" layoutX="312.0" layoutY="428.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="336.9830722808838">
          <font>
             <Font name="System Bold" size="22.0" />
          </font>
       </Text>
-      <Button layoutX="503.0" layoutY="735.0" mnemonicParsing="false" onAction="#signup_page_change" prefHeight="29.0" prefWidth="82.0" style="-fx-background-color: rgba(255, 255, 255, 0); -fx-border-color: rgba(0, 0, 0, 0);" />
+      <Button layoutX="415.0" layoutY="603.0" mnemonicParsing="false" onAction="#signup_page_change" prefHeight="29.0" prefWidth="82.0" style="-fx-background-color: rgba(255, 255, 255, 0); -fx-border-color: rgba(0, 0, 0, 0);" />
       <Button layoutX="127.0" layoutY="68.0" mnemonicParsing="false" onAction="#delete_it" prefHeight="131.0" prefWidth="221.0" text="Button" />
       <Button layoutX="1180.0" layoutY="35.0" mnemonicParsing="false" onAction="#developer_mode" prefHeight="47.0" prefWidth="107.0" style="-fx-background-color: #013f93;" text="Developer" textFill="WHITE" />
    </children>
