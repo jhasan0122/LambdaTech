@@ -11,72 +11,72 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="811.0" prefWidth="1616.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.lambdatech.SignupController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="610.0" prefWidth="1210.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.lambdatech.SignupController">
    <children>
-      <ImageView fx:id="signup_ss" fitHeight="810.0" fitWidth="1678.0" pickOnBounds="true" preserveRatio="true" styleClass="-fx-background-radius">
+      <ImageView fx:id="signup_ss" fitHeight="610.0" fitWidth="1210.0" pickOnBounds="true" preserveRatio="true" styleClass="-fx-background-radius">
          <image>
             <Image url="@img/signup.png" />
          </image>
       </ImageView>
-      <TextField fx:id="username" layoutX="644.0" layoutY="115.0" prefHeight="53.0" prefWidth="419.0" style="-fx-background-color: rgba(255, 255, 255, 0); -fx-border-color: rgba(0, 0, 0, 0);">
+      <TextField fx:id="username" layoutX="481.0" layoutY="84.0" prefHeight="38.0" prefWidth="319.0" style="-fx-background-color: rgba(255, 255, 255, 0); -fx-border-color: rgba(0, 0, 0, 0);">
          <font>
-            <Font size="26.0" />
+            <Font size="22.0" />
          </font>
       </TextField>
-      <TextField fx:id="password_show" layoutX="644.0" layoutY="226.0" prefHeight="53.0" prefWidth="419.0" style="-fx-background-color: rgba(255, 255, 255, 0); -fx-border-color: rgba(0, 0, 0, 0);" visible="false">
+      <TextField fx:id="password_show" layoutX="481.0" layoutY="167.0" prefHeight="44.0" prefWidth="319.0" style="-fx-background-color: rgba(255, 255, 255, 0); -fx-border-color: rgba(0, 0, 0, 0);" visible="false">
          <font>
-            <Font size="26.0" />
+            <Font size="22.0" />
          </font>
       </TextField>
-      <TextField fx:id="email" layoutX="644.0" layoutY="334.0" prefHeight="53.0" prefWidth="419.0" style="-fx-background-color: rgba(255, 255, 255, 0); -fx-border-color: rgba(0, 0, 0, 0);">
+      <TextField fx:id="email" layoutX="481.0" layoutY="249.0" prefHeight="38.0" prefWidth="319.0" style="-fx-background-color: rgba(255, 255, 255, 0); -fx-border-color: rgba(0, 0, 0, 0);">
          <font>
-            <Font size="26.0" />
+            <Font size="22.0" />
          </font>
       </TextField>
-      <TextField fx:id="phone" layoutX="644.0" layoutY="441.0" prefHeight="53.0" prefWidth="419.0" style="-fx-background-color: rgba(255, 255, 255, 0); -fx-border-color: rgba(0, 0, 0, 0);">
+      <TextField fx:id="phone" layoutX="481.0" layoutY="331.0" prefHeight="48.0" prefWidth="319.0" style="-fx-background-color: rgba(255, 255, 255, 0); -fx-border-color: rgba(0, 0, 0, 0);">
          <font>
-            <Font size="26.0" />
+            <Font size="22.0" />
          </font>
       </TextField>
-      <DatePicker fx:id="dob" layoutX="662.0" layoutY="544.0" prefHeight="58.0" prefWidth="391.0" style="-fx-background-color: rgba(0, 0, 0, 0); -fx-font: 26px &quot;Arial&quot;;" />
-      <Button layoutX="1198.0" layoutY="704.0" mnemonicParsing="false" onAction="#signup_it" prefHeight="76.0" prefWidth="202.0" style="-fx-background-color: rgba(255, 255, 255, 0); -fx-border-color: rgba(255, 255, 255, 0);" />
+      <DatePicker fx:id="dob" layoutX="481.0" layoutY="406.0" prefHeight="37.0" prefWidth="319.0" style="-fx-background-color: rgba(0, 0, 0, 0); -fx-font: 22px &quot;Arial&quot;;" />
+      <Button layoutX="895.0" layoutY="520.0" mnemonicParsing="false" onAction="#signup_it" prefHeight="65.0" prefWidth="154.0" style="-fx-background-color: rgba(255, 255, 255, 0); -fx-border-color: rgba(255, 255, 255, 0);" />
       <ImageView fx:id="back_btn" fitHeight="44.0" fitWidth="50.0" layoutX="23.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true" style="-fx-background-radius: 10px;">
          <image>
             <Image url="@img/back_btn.png" />
          </image>
       </ImageView>
       <Button layoutX="23.0" layoutY="22.0" mnemonicParsing="false" onAction="#back_to_signup" prefHeight="44.0" prefWidth="44.0" style="-fx-background-color: rgba(255, 255, 255, 0); -fx-border-color: rgba(255, 255, 255, 0);" />
-      <CheckBox fx:id="checkShow" layoutX="644.0" layoutY="295.0" mnemonicParsing="false" onAction="#changeVisibility" prefHeight="30.0" prefWidth="202.0" text="Show Password">
+      <CheckBox fx:id="checkShow" layoutX="481.0" layoutY="215.0" mnemonicParsing="false" onAction="#changeVisibility" prefHeight="30.0" prefWidth="202.0" text="Show Password">
          <font>
-            <Font size="20.0" />
+            <Font size="16.0" />
          </font>
       </CheckBox>
-      <PasswordField fx:id="password" layoutX="644.0" layoutY="220.0" prefHeight="58.0" prefWidth="425.0" style="-fx-background-color: rgba(255, 255, 255, 0); -fx-border-color: rgba(255, 255, 255, 0);">
+      <PasswordField fx:id="password" layoutX="481.0" layoutY="167.0" prefHeight="40.0" prefWidth="319.0" style="-fx-background-color: rgba(255, 255, 255, 0); -fx-border-color: rgba(255, 255, 255, 0);">
          <font>
-            <Font size="24.0" />
+            <Font size="22.0" />
          </font>
       </PasswordField>
-      <Text fx:id="username_black" fill="#f20606" layoutX="652.0" layoutY="205.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="403.13671875">
+      <Text fx:id="username_black" fill="#f20606" layoutX="481.0" layoutY="156.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="381.13671875">
          <font>
             <Font size="22.0" />
          </font>
       </Text>
-      <Text fx:id="password_black" fill="#ee0707" layoutX="836.0" layoutY="319.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="218.13671875">
+      <Text fx:id="password_black" fill="#ee0707" layoutX="627.0" layoutY="239.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="218.13671875">
          <font>
             <Font size="22.0" />
          </font>
       </Text>
-      <Text fx:id="email_black" fill="#eb0505" layoutX="644.0" layoutY="429.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="403.13671875">
+      <Text fx:id="email_black" fill="#eb0505" layoutX="481.0" layoutY="321.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="403.13671875">
          <font>
             <Font size="22.0" />
          </font>
       </Text>
-      <Text fx:id="phone_black" fill="#eb0909" layoutX="652.0" layoutY="529.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="403.13671875">
+      <Text fx:id="phone_black" fill="#eb0909" layoutX="491.0" layoutY="400.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="340.13671875">
          <font>
             <Font size="22.0" />
          </font>
       </Text>
-      <Text fx:id="dob_black" fill="#e40b0b" layoutX="644.0" layoutY="633.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="403.13671875">
+      <Text fx:id="dob_black" fill="#e40b0b" layoutX="492.0" layoutY="476.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="358.13671875">
          <font>
             <Font size="22.0" />
          </font>
