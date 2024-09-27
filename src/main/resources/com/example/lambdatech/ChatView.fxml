@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<VBox fx:id="mainContainer" xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.lambdatech.ChatController">
+    <VBox spacing="10" alignment="CENTER">
+        <!-- Chat Area -->
+        <Label text="Group Chat" style="-fx-font-size: 24px;"/>
+        <HBox spacing="10" alignment="CENTER">
+            <ListView fx:id="userList" prefWidth="150" prefHeight="400" />
+            <VBox spacing="10">
+                <ScrollPane fx:id="messagePane" fitToWidth="true" prefHeight="400" prefWidth="500">
+                    <VBox fx:id="messageBox" spacing="5" padding="10" />
+                </ScrollPane>
+                <HBox spacing="10">
+                    <TextField fx:id="messageInput" promptText="Enter your message..." HBox.hgrow="ALWAYS"/>
+                    <Button text="Send" onAction="#handleSendMessage" />
+                </HBox>
+            </VBox>
+        </HBox>
+    </VBox>
+</VBox>

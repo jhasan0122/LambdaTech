@@ -31,5 +31,6 @@
       <Button layoutX="924.0" layoutY="15.0" mnemonicParsing="false" onAction="#search" prefHeight="47.0" prefWidth="52.0" style="-fx-background-radius: 100; -fx-background-color: rgba(255, 255, 255, 0); -fx-border-color: rgba(255, 255, 255, 0);" />
       <Button layoutX="5.0" layoutY="167.0" mnemonicParsing="false" onAction="#contact_manager_page_change" prefHeight="48.0" prefWidth="225.0" style="-fx-background-color: rgba(255, 255, 255, 0); -fx-border-color: rgba(255, 255, 255, 0);" />
       <Button layoutX="5.0" layoutY="548.0" mnemonicParsing="false" onAction="#review_page_change" prefHeight="57.0" prefWidth="225.0" style="-fx-background-color: rgba(255, 255, 255, 0); -fx-border-color: rgba(255, 255, 255, 0);" />
+      <Button layoutX="5.0" layoutY="209.0" mnemonicParsing="false" onAction="#contract_make" prefHeight="47.0" prefWidth="219.0" text="Button" />
    </children>
 </AnchorPane>

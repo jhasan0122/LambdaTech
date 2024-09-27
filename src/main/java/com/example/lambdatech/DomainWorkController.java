@@ -26,6 +26,7 @@ import java.io.IOException;
 import java.sql.*;
 
 
+
 public class DomainWorkController extends JFrame {
 
     @FXML
@@ -87,6 +88,11 @@ public class DomainWorkController extends JFrame {
 
         window.setScene(scene2);
         window.show();
+    }
+
+    @FXML
+    void contract_make(ActionEvent event) {
+
     }
 
 

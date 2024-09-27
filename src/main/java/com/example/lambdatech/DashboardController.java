@@ -12,6 +12,9 @@ import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.sql.*;
+
+
 
 public class DashboardController {
 
@@ -234,8 +237,19 @@ public class DashboardController {
     //Sidebar
 
     @FXML
-    void contact_manager_page_change(ActionEvent event) {
-        System.out.println("contact with manager");
+    void contact_manager_page_change(ActionEvent event) throws IOException{
+
+        Parent parent = FXMLLoader.load(getClass().getResource("ChatView.fxml"));
+
+        Scene scene2 = new Scene(parent);
+
+        Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
+        window.setTitle("Chat");
+
+        window.setScene(scene2);
+        window.show();
+
+
     }
 
     @FXML
@@ -243,6 +257,19 @@ public class DashboardController {
         System.out.println("Review page pending....");
     }
 
+
+    @FXML
+    void contract_make(ActionEvent event) throws SQLException, IOException {
+        Parent parent = FXMLLoader.load(getClass().getResource("/com/example/lambdatech/ContractWork.fxml"));
+
+        Scene scene2 = new Scene(parent);
+
+        Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        window.setTitle("Dashboard");
+
+        window.setScene(scene2);
+        window.show();
+    }
 
 
 

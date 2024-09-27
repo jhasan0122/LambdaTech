@@ -19,6 +19,8 @@ import java.sql.*;
 
 public class MainController {
 
+    static String user="";
+
     @FXML
     private ImageView back_ss;
 
@@ -96,6 +98,8 @@ public class MainController {
              final String PASSWORD = "";
 
 
+
+
             try {
                 Connection con = DriverManager.getConnection(URL,USER,PASSWORD);
                 Statement st = con.createStatement();
@@ -113,6 +117,8 @@ public class MainController {
                 }
 
                 if(pass.equals(password) || pass.equals(pass2)){
+
+                    user = username;
 
                     Parent parent = FXMLLoader.load(getClass().getResource("dashboard.fxml"));
 
